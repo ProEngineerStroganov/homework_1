@@ -1,0 +1,12 @@
+from decimal import Decimal
+print('Ваше имя:')
+name=str(input())
+print('Название учебного курса:')
+training_course=str(input())
+print('Общее количество времени на курсе (в часах):')
+summary_time=Decimal(input())
+print('Общее количество решенных задач на курсе:')
+exercises_count=int(input())
+print('Имя:', name)
+print('Изучаемая дисциплина:', training_course)
+print('Среднее время на одну задачу (в часах):', summary_time/exercises_count)
